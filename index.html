@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        margin: 40px;
+}
+  .wrapper1{
+      display: grid;
+      grid-template-columns:120px 80px 60px 120px 120px 80px 180px 90px 130px;
+      grid-template-rows: 100px ;
+      grid-gap:5px;
+      text-align: center;
+      
+  }
+
+  .wrapper2{
+      display: grid;
+      grid-template-columns:240px 25px 150px 175px 125px 50px 180px 90px;
+      grid-template-rows: 100px ;
+      grid-gap:5px;
+      margin-top: 5px;
+      text-align: center;
+  }
+  .wrapper3{
+      display: grid;
+      grid-template-columns:320px 225px 380px 285px  ;
+      grid-template-rows: 100px ;
+      grid-gap:5px;
+      margin-top: 5px;
+      text-align: center;
+  }
+  .wrapper4{
+      display: grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-template-rows: 100px ;
+      grid-gap:5px;
+      margin-top: 5px;
+      text-align: center;
+  }
+
+  .box {
+    background-color:red;
+    color: #fff;
+    padding: 10px;
+    font-size: 150%;
+  }
+  .c{
+    grid-column: 3/-6;
+  }
+  .i{
+    grid-column: 10/-1;
+   
+  }
+  .j{
+    grid-column: 1/2;
+  }
+  .k{
+    grid-column: 4/2;
+  }
+  .l{
+    grid-column: 5/4;
+  }
+  .m{
+    grid-column: 5/7;
+  }
+  .n{
+    grid-column: 7/8;
+  }
+  .o{
+    grid-column: 8/8;
+  }
+  .p{
+    grid-column: 9/-1;
+  }
+ 
+  .v{
+    grid-column: 1/2;
+  }
+  .k,.l,.m,.n,.o,.p,.s,.v,.w,.x,.G,.H,.I,.F{
+    background-color: #F9876F;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper1">
+        <div class="box a">1</div>
+        <div class="box b">2</div>
+        <div class="box c">3</div>
+        <div class="box d">4</div>
+        <div class="box e">5</div>
+        <div class="box f">6</div>
+        <div class="box g">7</div>
+        <div class="box h">8</div>
+        <div class="box i">9</div>
+      </div>
+
+      <div class="wrapper2">
+        <div class="box j">10</div>
+        <div class="box k">Uppercase</div>
+        <div class="box l">A</div>
+        <div class="box m">B</div>
+        <div class="box n">C</div>
+        <div class="box o">D</div>
+        <div class="box p">E</div>
+      </div>
+
+      <div class="wrapper3">
+        <div class="box F">F</div>
+        <div class="box G">G</div>
+        <div class="box H">H</div>
+        <div class="box I">I</div>
+      </div>
+
+      <div class="wrapper4">
+        <div class="box v">U</div>
+        <div class="box w">V</div>
+        <div class="box x">X</div>
+      </div>
+      
+</body>
+</html>
